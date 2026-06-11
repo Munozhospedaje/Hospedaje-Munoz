@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hospedaje Muñoz - Habitaciones cómodas, seguras y al mejor precio en Ica, Perú. Reserva directa por WhatsApp." />
+  <meta name="keywords" content="hospedaje ica, hotel ica, hospedaje muñoz, alojamiento ica peru" />
+  <title>Hospedaje Muñoz | Ica, Perú</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <img src="logo.png" alt="Hospedaje Muñoz Logo" class="logo-img" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#habitaciones">Habitaciones</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#reserva" class="nav-cta">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO / PORTADA ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <img src="portada.png" alt="Hospedaje Muñoz - Ica Perú" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <img src="logo.png" alt="Hospedaje Muñoz" class="hero-logo" />
+      <p class="hero-tagline">Habitaciones cómodas, seguras y al mejor precio.</p>
+      <div class="hero-checkin">
+        <span>🕐 Check-in: 1:00 p.m.</span>
+        <span>🕚 Check-out: 11:00 a.m.</span>
+      </div>
+      <!-- Beneficios destacados en el hero -->
+      <div class="hero-benefits">
+        <span>📶 Wi-Fi Gratis</span>
+        <span>🚗 Parking Gratuito</span>
+        <span>🕐 Recepción 24 horas</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#reserva" class="btn btn-primary">Reserva tu estadía</a>
+        <a href="#habitaciones" class="btn btn-secondary">Ver habitaciones</a>
+      </div>
+      <!-- Elementos de confianza bajo los botones -->
+      <p class="hero-trust">
+        ✓ Reserva directa por WhatsApp &nbsp;·&nbsp;
+        ✓ Sin intermediarios &nbsp;·&nbsp;
+        ✓ Atención personalizada
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== HABITACIONES ========== -->
+  <section class="section" id="habitaciones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Alojamiento</span>
+        <h2 class="section-title">Nuestras Habitaciones</h2>
+        <p class="section-sub">Elige el espacio perfecto para tu descanso en Ica.</p>
+      </div>
+
+      <div class="rooms-grid">
+
+        <!-- 1. Matrimonial con Balcón — DESTACADA -->
+        <article class="room-card featured">
+          <div class="room-badge">⭐ Recomendada</div>
+          <div class="room-icon">🛏️</div>
+          <div class="room-body">
+            <h3>Matrimonial con Balcón</h3>
+            <ul class="room-features">
+              <li><span class="icon">👥</span> 2 personas</li>
+              <li><span class="icon">🛏️</span> 1 cama de 2 plazas</li>
+              <li><span class="icon">🌅</span> Balcón privado</li>
+            </ul>
+            <div class="room-price">
+              <span class="price-label">Desde</span>
+              <span class="price-amount">S/ 75</span>
+              <span class="price-night">/ noche</span>
+            </div>
+            <a href="#reserva" class="btn btn-primary btn-full" data-room="Matrimonial con Balcón">Reserva tu estadía</a>
+          </div>
+        </article>
+
+        <!-- 2. Doble Superior -->
+        <article class="room-card">
+          <div class="room-icon">🏨</div>
+          <div class="room-body">
+            <h3>Doble Superior</h3>
+            <ul class="room-features">
+              <li><span class="icon">👥</span> 4 personas</li>
+              <li><span class="icon">🛏️</span> 2 camas de 2 plazas</li>
+            </ul>
+            <div class="room-price">
+              <span class="price-label">Desde</span>
+              <span class="price-amount">S/ 95</span>
+              <span class="price-night">/ noche</span>
+            </div>
+            <a href="#reserva" class="btn btn-primary btn-full" data-room="Doble Superior">Reserva tu estadía</a>
+          </div>
+        </article>
+
+        <!-- 3. Matrimonial Standard -->
+        <article class="room-card">
+          <div class="room-icon">💑</div>
+          <div class="room-body">
+            <h3>Matrimonial Standard</h3>
+            <ul class="room-features">
+              <li><span class="icon">👥</span> 2 personas</li>
+              <li><span class="icon">🛏️</span> 1 cama de 2 plazas</li>
+            </ul>
+            <div class="room-price">
+              <span class="price-label">Desde</span>
+              <span class="price-amount">S/ 65</span>
+              <span class="price-night">/ noche</span>
+            </div>
+            <a href="#reserva" class="btn btn-primary btn-full" data-room="Matrimonial Standard">Reserva tu estadía</a>
+          </div>
+        </article>
+
+        <!-- 4. Doble Standard -->
+        <article class="room-card">
+          <div class="room-icon">🛏️</div>
+          <div class="room-body">
+            <h3>Doble Standard</h3>
+            <ul class="room-features">
+              <li><span class="icon">👥</span> 3 personas</li>
+              <li><span class="icon">🛏️</span> 1 cama de 2 plazas</li>
+              <li><span class="icon">🛏️</span> 1 cama de plaza y media</li>
+            </ul>
+            <div class="room-price">
+              <span class="price-label">Desde</span>
+              <span class="price-amount">S/ 85</span>
+              <span class="price-night">/ noche</span>
+            </div>
+            <a href="#reserva" class="btn btn-primary btn-full" data-room="Doble Standard">Reserva tu estadía</a>
+          </div>
+        </article>
+
+        <!-- 5. Simple -->
+        <article class="room-card">
+          <div class="room-icon">🧳</div>
+          <div class="room-body">
+            <h3>Simple</h3>
+            <ul class="room-features">
+              <li><span class="icon">👤</span> 1 persona</li>
+              <li><span class="icon">🛏️</span> 1 cama de 2 plazas</li>
+            </ul>
+            <div class="room-price">
+              <span class="price-label">Desde</span>
+              <span class="price-amount">S/ 50</span>
+              <span class="price-night">/ noche</span>
+            </div>
+            <a href="#reserva" class="btn btn-primary btn-full" data-room="Simple">Reserva tu estadía</a>
+          </div>
+        </article>
+
+      </div><!-- /rooms-grid -->
+
+      <!-- Nota de precios -->
+      <p class="rooms-notice">
+        ⚠️ Los precios establecidos no aplican para fechas festivas ni feriados.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="section section-alt" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Comodidades</span>
+        <h2 class="section-title">Servicios Incluidos</h2>
+        <p class="section-sub">Todo lo que necesitas para una estadía perfecta.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon">📶</div>
+          <span>Wi-Fi gratuito</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🚿</div>
+          <span>Agua caliente 24 horas</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📺</div>
+          <span>TV por cable</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🔔</div>
+          <span>Recepción 24 horas</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🧹</div>
+          <span>Limpieza diaria</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🚗</div>
+          <span>Parking gratuito</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">👕</div>
+          <span>Servicio de lavandería</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🌿</div>
+          <span>Terraza / Comedor</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📱</div>
+          <span>Pago con Yape y Plin</span>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🧾</div>
+          <span>Boletas y Facturas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCIAS ========== -->
+  <section class="section" id="experiencias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Solo para huéspedes</span>
+        <h2 class="section-title">Completa tu estadía con experiencias inolvidables en Ica.</h2>
+        <p class="section-sub">Estas experiencias están disponibles exclusivamente para huéspedes de Hospedaje Muñoz.</p>
+        <!-- Nota de exclusividad -->
+        <p class="exp-exclusive-note">🔑 Solo disponibles para huéspedes con reserva confirmada en Hospedaje Muñoz.</p>
+      </div>
+
+      <!-- Experiencias más solicitadas -->
+      <p class="exp-group-label">⭐ Más solicitadas</p>
+      <div class="experiences-grid experiences-featured">
+        <div class="exp-card exp-card-highlight">
+          <div class="exp-icon">🏜️</div>
+          <h4>City Tour Ica + Buggies y Sandboarding</h4>
+          <p>Recorre los atractivos de la ciudad y vive la adrenalina de las dunas.</p>
+        </div>
+        <div class="exp-card exp-card-highlight">
+          <div class="exp-icon">🐧</div>
+          <h4>Tour Paracas + Islas Ballestas</h4>
+          <p>Descubre la Reserva Nacional de Paracas y la fauna de las Islas Ballestas.</p>
+        </div>
+      </div>
+
+      <!-- Más experiencias disponibles -->
+      <div class="exp-more-block">
+        <p class="exp-more-title">Y muchas más experiencias disponibles para nuestros huéspedes</p>
+        <div class="exp-more-list">
+          <div class="exp-more-item"><span>🏍️</span> Paseo en Cuatrimotos</div>
+          <div class="exp-more-item"><span>🏔️</span> Cañón de los Perdidos</div>
+          <div class="exp-more-item"><span>✈️</span> Tour Terrestre Nasca</div>
+        </div>
+      </div>
+
+      <p class="exp-disclaimer">
+        ⚠️ Las experiencias turísticas se encuentran sujetas a disponibilidad y cotización previa. Los pagos por conceptos de ingresos a atractivos turísticos, impuestos tributarios o tasas establecidas por terceros no se encuentran incluidos y deberán ser asumidos por el visitante cuando corresponda.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== FORMULARIO DE RESERVA ========== -->
+  <section class="section section-alt" id="reserva">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reserva directa</span>
+        <h2 class="section-title">¿Listo para reservar?</h2>
+        <p class="section-sub">Completa el formulario y te contactamos por WhatsApp al instante.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="reservaForm" novalidate>
+
+          <!-- Datos del huésped -->
+          <fieldset>
+            <legend>Datos del Huésped</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono / WhatsApp *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="habitacion">Habitación *</label>
+                <select id="habitacion" name="habitacion" required>
+                  <option value="">Selecciona una habitación</option>
+                  <option value="Matrimonial con Balcón – S/ 75/noche">Matrimonial con Balcón – S/ 75/noche</option>
+                  <option value="Doble Superior – S/ 95/noche">Doble Superior – S/ 95/noche</option>
+                  <option value="Doble Standard – S/ 85/noche">Doble Standard – S/ 85/noche</option>
+                  <option value="Matrimonial Standard – S/ 65/noche">Matrimonial Standard – S/ 65/noche</option>
+                  <option value="Simple – S/ 50/noche">Simple – S/ 50/noche</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="huespedes">Número de huéspedes *</label>
+                <select id="huespedes" name="huespedes" required>
+                  <option value="">Seleccionar</option>
+                  <option value="1">1 persona</option>
+                  <option value="2">2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 personas</option>
+                </select>
+              </div>
+            </div>
+            <!-- Aviso estratégico de experiencias -->
+            <p class="habitacion-notice">
+              Todas nuestras experiencias turísticas están disponibles exclusivamente para huéspedes con reserva confirmada.
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Fecha de ingreso *</label>
+                <input type="date" id="checkin" name="checkin" required />
+              </div>
+              <div class="form-group">
+                <label for="checkout">Fecha de salida *</label>
+                <input type="date" id="checkout" name="checkout" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="llegada">Hora aproximada de llegada *</label>
+                <select id="llegada" name="llegada" required>
+                  <option value="">Seleccionar hora</option>
+                  <option value="01:00 p.m.">01:00 p.m. (Check-in mínimo)</option>
+                  <option value="02:00 p.m.">02:00 p.m.</option>
+                  <option value="03:00 p.m.">03:00 p.m.</option>
+                  <option value="04:00 p.m.">04:00 p.m.</option>
+                  <option value="05:00 p.m.">05:00 p.m.</option>
+                  <option value="06:00 p.m.">06:00 p.m.</option>
+                  <option value="07:00 p.m.">07:00 p.m.</option>
+                  <option value="08:00 p.m.">08:00 p.m.</option>
+                  <option value="09:00 p.m.">09:00 p.m.</option>
+                  <option value="10:00 p.m.">10:00 p.m.</option>
+                  <option value="11:00 p.m.">11:00 p.m.</option>
+                  <option value="12:00 a.m. (medianoche)">12:00 a.m. (medianoche)</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Intro estratégica antes de experiencias -->
+          <div class="experiencias-intro">
+            <h3>✨ Personaliza tu estadía</h3>
+            <p>
+              Como huésped de Hospedaje Muñoz, puedes complementar tu visita
+              con experiencias exclusivas en Ica.
+            </p>
+          </div>
+
+          <!-- Experiencias opcionales -->
+          <fieldset>
+            <legend>Experiencias exclusivas para huéspedes <span class="legend-note">(con reserva confirmada)</span></legend>
+            <!-- Nota de exclusividad dentro del fieldset -->
+            <p class="exp-form-note">🔑 Estas experiencias solo están disponibles para huéspedes con reserva confirmada en Hospedaje Muñoz.</p>
+
+            <!-- Experiencia 1 -->
+            <div class="exp-option">
+              <label class="exp-checkbox-label">
+                <input type="checkbox" class="exp-check" name="exp1" value="City Tour Ica + Buggies y Sandboarding" />
+                <span>🏜️ City Tour Ica + Buggies y Sandboarding</span>
+              </label>
+              <div class="exp-details" id="details-exp1" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Fecha deseada</label>
+                    <input type="date" name="exp1_fecha" />
+                  </div>
+                  <div class="form-group">
+                    <label>Personas</label>
+                    <input type="number" name="exp1_personas" min="1" max="20" placeholder="Nº de personas" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 2 -->
+            <div class="exp-option">
+              <label class="exp-checkbox-label">
+                <input type="checkbox" class="exp-check" name="exp2" value="Tour Paracas + Islas Ballestas" />
+                <span>🐧 Tour Paracas + Islas Ballestas</span>
+              </label>
+              <div class="exp-details" id="details-exp2" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Fecha deseada</label>
+                    <input type="date" name="exp2_fecha" />
+                  </div>
+                  <div class="form-group">
+                    <label>Personas</label>
+                    <input type="number" name="exp2_personas" min="1" max="20" placeholder="Nº de personas" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 3 -->
+            <div class="exp-option">
+              <label class="exp-checkbox-label">
+                <input type="checkbox" class="exp-check" name="exp3" value="Paseo en Cuatrimotos" />
+                <span>🏍️ Paseo en Cuatrimotos</span>
+              </label>
+              <div class="exp-details" id="details-exp3" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Fecha deseada</label>
+                    <input type="date" name="exp3_fecha" />
+                  </div>
+                  <div class="form-group">
+                    <label>Personas</label>
+                    <input type="number" name="exp3_personas" min="1" max="20" placeholder="Nº de personas" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 4 -->
+            <div class="exp-option">
+              <label class="exp-checkbox-label">
+                <input type="checkbox" class="exp-check" name="exp4" value="Cañón de los Perdidos" />
+                <span>🏔️ Cañón de los Perdidos</span>
+              </label>
+              <div class="exp-details" id="details-exp4" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Fecha deseada</label>
+                    <input type="date" name="exp4_fecha" />
+                  </div>
+                  <div class="form-group">
+                    <label>Personas</label>
+                    <input type="number" name="exp4_personas" min="1" max="20" placeholder="Nº de personas" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 5 -->
+            <div class="exp-option">
+              <label class="exp-checkbox-label">
+                <input type="checkbox" class="exp-check" name="exp5" value="Tour Terrestre Nasca" />
+                <span>✈️ Tour Terrestre Nasca</span>
+              </label>
+              <div class="exp-details" id="details-exp5" style="display:none;">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Fecha deseada</label>
+                    <input type="date" name="exp5_fecha" />
+                  </div>
+                  <div class="form-group">
+                    <label>Personas</label>
+                    <input type="number" name="exp5_personas" min="1" max="20" placeholder="Nº de personas" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <!-- Observaciones -->
+          <fieldset>
+            <legend>Observaciones</legend>
+            <div class="form-group">
+              <label for="observaciones">Comentarios adicionales</label>
+              <textarea id="observaciones" name="observaciones" rows="4" placeholder="Alguna solicitud especial, hora de llegada fuera del rango, necesidades especiales..."></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span class="whatsapp-icon">📲</span> Enviar reserva por WhatsApp
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Opiniones</span>
+        <h2 class="section-title">¿Por qué elegir Hospedaje Muñoz?</h2>
+        <p class="testimonios-aviso">
+          🔒 Los testimonios publicados en esta página han sido previamente revisados y autorizados por la administración de Hospedaje Muñoz.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Muy buen trato del personal, habitaciones limpias y cómodas. El parking fue un plus enorme. Volvería sin dudarlo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">C</div>
+            <div>
+              <strong>Carlos M.</strong>
+              <span>Lima, Perú</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Excelente ubicación, Wi-Fi rápido y la terraza tiene una vista preciosa. El precio es muy justo para todo lo que ofrecen."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <strong>Lucía R.</strong>
+              <span>Arequipa, Perú</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Llegué tarde en la noche y la recepción estaba activa. La habitación tenía todo lo necesario. El tour a Paracas fue increíble, lo reservé desde aquí."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <strong>Miguel A.</strong>
+              <span>Cusco, Perú</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== UBICACIÓN ========== -->
+  <section class="section section-alt" id="ubicacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">¿Cómo llegar?</span>
+        <h2 class="section-title">Nuestra Ubicación</h2>
+      </div>
+      <div class="location-wrapper">
+        <div class="location-info">
+          <div class="location-detail">
+            <span class="loc-icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>Urb. Ciudadela Magisterial Mz. J Lote 20,<br />Ica 11004, Perú.</p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <span class="loc-icon">📱</span>
+            <div>
+              <strong>WhatsApp de reservas</strong>
+              <p><a href="https://wa.me/51945087266" target="_blank" rel="noopener">+51 945 087 266</a></p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <span class="loc-icon">🕐</span>
+            <div>
+              <strong>Horarios</strong>
+              <p>Check-in: 1:00 p.m. | Check-out: 11:00 a.m.</p>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/Urb.+Ciudadela+Magisterial+Mz.+J+Lote+20+Ica+Peru" target="_blank" rel="noopener" class="btn btn-primary">
+            🗺️ Cómo llegar
+          </a>
+        </div>
+        <div class="location-map">
+          <iframe
+            title="Ubicación Hospedaje Muñoz en Ica"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.0!2d-75.7365!3d-14.0781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDA0JzQxLjIiUyA3NcKwNDQnMTEuNCJX!5e0!3m2!1ses!2spe!4v1620000000000!5m2!1ses!2spe"
+            width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Hospedaje Muñoz" class="footer-logo" />
+          <p>Habitaciones cómodas, seguras y al mejor precio en Ica, Perú.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <a href="#inicio">Inicio</a>
+          <a href="#habitaciones">Habitaciones</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#experiencias">Experiencias</a>
+          <a href="#reserva">Reservar</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>📍 Urb. Ciudadela Magisterial Mz. J Lote 20, Ica 11004, Perú.</p>
+          <p>📱 <a href="https://wa.me/51945087266" target="_blank" rel="noopener">+51 945 087 266</a></p>
+          <p>🌐 gentlevins.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hospedaje Muñoz. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BOTÓN FLOTANTE WHATSAPP ========== -->
+  <a href="https://wa.me/51945087266?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20las%20habitaciones%20disponibles."
+     target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chatear por WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.769L0 32l8.469-2.018A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.176a13.14 13.14 0 01-6.704-1.834l-.48-.285-4.97 1.184 1.229-4.836-.314-.498A13.14 13.14 0 012.824 16C2.824 8.698 8.698 2.824 16 2.824S29.176 8.698 29.176 16 23.302 29.176 16 29.176zm7.241-9.811c-.397-.199-2.348-1.158-2.712-1.29-.364-.132-.629-.199-.894.199-.265.397-1.026 1.29-1.258 1.555-.232.265-.464.298-.861.1-.397-.199-1.677-.618-3.195-1.973-1.18-1.054-1.978-2.355-2.21-2.752-.232-.397-.025-.611.174-.809.18-.178.397-.464.596-.696.199-.232.265-.397.397-.662.132-.265.066-.497-.033-.696-.1-.199-.894-2.155-1.225-2.951-.322-.775-.649-.67-.894-.683l-.762-.013c-.265 0-.696.1-.1.062 1.556.862 2.51 2.355 2.775 2.752.265.397 2.377 3.632 5.761 5.094 3.384 1.462 3.384.974 3.995.913.61-.066 1.969-.804 2.247-1.581.279-.777.279-1.44.199-1.581-.079-.132-.282-.199-.596-.331z" fill="#fff"/>
+    </svg>
+    <span class="whatsapp-label">Reserva aquí</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

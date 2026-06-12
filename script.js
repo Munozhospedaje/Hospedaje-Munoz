@@ -233,8 +233,79 @@
 })();
 
 
+
+
 /* ─────────────────────────────────────────
-   6. SMOOTH ANCHOR SCROLL (fallback para
+   7. CARRUSEL DE FOTOS DE HABITACIONES
+   Funciona con cualquier cantidad de imágenes.
+   No depende de librerías externas.
+───────────────────────────────────────── */
+(function initRoomCarousels() {
+  // Seleccionar todos los carruseles que tienen más de una imagen
+  var carousels = document.querySelectorAll('.room-carousel:not(.room-carousel--single)');
+
+  carousels.forEach(function (carousel) {
+    var slides = carousel.querySelectorAll('.room-slide');
+    var dots   = carousel.querySelectorAll('.carousel-dot');
+    var prev   = carousel.querySelector('.carousel-prev');
+    var next   = carousel.querySelector('.carousel-next');
+    var total  = slides.length;
+    var current = 0;
+
+    // Si solo hay 1 imagen, no inicializar controles
+    if (total <= 1) return;
+
+    /**
+     * Mueve el carrusel al índice indicado.
+     * @param {number} index - índice destino
+     */
+    function goTo(index) {
+      // Quitar clase activa de la diapositiva y punto actuales
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+
+      // Calcular nuevo índice con wraparound circular
+      current = (index + total) % total;
+
+      // Activar nueva diapositiva y punto
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    // Botón anterior
+    prev.addEventListener('click', function (e) {
+      e.preventDefault();
+      goTo(current - 1);
+    });
+
+    // Botón siguiente
+    next.addEventListener('click', function (e) {
+      e.preventDefault();
+      goTo(current + 1);
+    });
+
+    // Clic en puntos indicadores
+    dots.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        goTo(i);
+      });
+    });
+
+    // Soporte táctil: deslizar con el dedo (swipe)
+    var touchStartX = 0;
+    carousel.addEventListener('touchstart', function (e) {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', function (e) {
+      var delta = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(delta) > 40) {         // umbral mínimo de 40px
+        goTo(delta < 0 ? current + 1 : current - 1);
+      }
+    }, { passive: true });
+  });
+})();
+
       navegadores sin scroll-behavior: smooth)
 ───────────────────────────────────────── */
 (function initSmoothScroll() {

@@ -18,7 +18,7 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#inicio" class="nav-logo">
-        <img src="logo.png" alt="Hospedaje Muñoz Logo" class="logo-img" />
+        <img src="Logo/logo.png" alt="Hospedaje Muñoz Logo" class="logo-img" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -38,11 +38,11 @@
   <!-- ========== HERO / PORTADA ========== -->
   <section class="hero" id="inicio">
     <div class="hero-bg">
-      <img src="portada.png" alt="Hospedaje Muñoz - Ica Perú" class="hero-img" />
+      <img src="Hero/hero-collage.jpg" alt="Hospedaje Muñoz - Ica Perú" class="hero-img" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
-      <img src="logo.png" alt="Hospedaje Muñoz" class="hero-logo" />
+      <img src="Logo/logo.png" alt="Hospedaje Muñoz" class="hero-logo" />
       <p class="hero-tagline">Habitaciones cómodas, seguras y al mejor precio.</p>
       <div class="hero-checkin">
         <span>🕐 Check-in: 1:00 p.m.</span>
@@ -78,10 +78,28 @@
 
       <div class="rooms-grid">
 
-        <!-- 1. Matrimonial con Balcón — DESTACADA -->
+        <!-- 1. Matrimonial con Balcón — DESTACADA (2 fotos → carrusel) -->
         <article class="room-card featured">
           <div class="room-badge">⭐ Recomendada</div>
-          <div class="room-icon">🛏️</div>
+
+          <!-- Carrusel de fotos -->
+          <div class="room-carousel" data-current="0">
+            <div class="room-slides">
+              <img src="Matrimonial-Balcon/matrimonial-balcon-1.jpg"
+                   alt="Matrimonial con Balcón - vista 1"
+                   class="room-slide active" loading="lazy" />
+              <img src="Matrimonial-Balcon/matrimonial-balcon-2.jpg"
+                   alt="Matrimonial con Balcón - vista 2"
+                   class="room-slide" loading="lazy" />
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Foto anterior">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Foto siguiente">&#8250;</button>
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
+
           <div class="room-body">
             <h3>Matrimonial con Balcón</h3>
             <ul class="room-features">
@@ -98,9 +116,15 @@
           </div>
         </article>
 
-        <!-- 2. Doble Superior -->
+        <!-- 2. Doble Superior (1 foto — sin carrusel) -->
         <article class="room-card">
-          <div class="room-icon">🏨</div>
+          <div class="room-carousel room-carousel--single">
+            <div class="room-slides">
+              <img src="Doble-Superior/doble-superior-1.jpg"
+                   alt="Doble Superior"
+                   class="room-slide active" loading="lazy" />
+            </div>
+          </div>
           <div class="room-body">
             <h3>Doble Superior</h3>
             <ul class="room-features">
@@ -116,9 +140,24 @@
           </div>
         </article>
 
-        <!-- 3. Matrimonial Standard -->
+        <!-- 3. Matrimonial Standard (2 fotos → carrusel) -->
         <article class="room-card">
-          <div class="room-icon">💑</div>
+          <div class="room-carousel" data-current="0">
+            <div class="room-slides">
+              <img src="Matrimonial-Standard/matrimonial-standard-1.jpg"
+                   alt="Matrimonial Standard - vista 1"
+                   class="room-slide active" loading="lazy" />
+              <img src="Matrimonial-Standard/matrimonial-standard-2.jpg"
+                   alt="Matrimonial Standard - vista 2"
+                   class="room-slide" loading="lazy" />
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Foto anterior">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Foto siguiente">&#8250;</button>
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
           <div class="room-body">
             <h3>Matrimonial Standard</h3>
             <ul class="room-features">
@@ -134,9 +173,24 @@
           </div>
         </article>
 
-        <!-- 4. Doble Standard -->
+        <!-- 4. Doble Standard (2 fotos → carrusel) -->
         <article class="room-card">
-          <div class="room-icon">🛏️</div>
+          <div class="room-carousel" data-current="0">
+            <div class="room-slides">
+              <img src="Doble-Standard/doble-standard-1.jpg"
+                   alt="Doble Standard - vista 1"
+                   class="room-slide active" loading="lazy" />
+              <img src="Doble-Standard/doble-standard-2.jpg"
+                   alt="Doble Standard - vista 2"
+                   class="room-slide" loading="lazy" />
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Foto anterior">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Foto siguiente">&#8250;</button>
+            <div class="carousel-dots">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </div>
           <div class="room-body">
             <h3>Doble Standard</h3>
             <ul class="room-features">
@@ -153,9 +207,15 @@
           </div>
         </article>
 
-        <!-- 5. Simple -->
+        <!-- 5. Simple (1 foto — sin carrusel) -->
         <article class="room-card">
-          <div class="room-icon">🧳</div>
+          <div class="room-carousel room-carousel--single">
+            <div class="room-slides">
+              <img src="Simple/simple-1.jpg"
+                   alt="Habitación Simple"
+                   class="room-slide active" loading="lazy" />
+            </div>
+          </div>
           <div class="room-body">
             <h3>Simple</h3>
             <ul class="room-features">
@@ -578,14 +638,14 @@
               <p>Check-in: 1:00 p.m. | Check-out: 11:00 a.m.</p>
             </div>
           </div>
-          <a href="https://www.google.com/maps/search/Urb.+Ciudadela+Magisterial+Mz.+J+Lote+20+Ica+Peru" target="_blank" rel="noopener" class="btn btn-primary">
+          <a href="https://www.google.com/maps/place/Hospedaje+MU%C3%91OZ/@-14.0797002,-75.7465,17z/data=!3m1!4b1!4m9!3m8!1s0x9110e345cc7ff645:0xab36d02c2838826f!5m2!4m1!1i2!8m2!3d-14.0797002!4d-75.7416291!16s%2Fg%2F11fphb8b8p?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-primary">
             🗺️ Cómo llegar
           </a>
         </div>
         <div class="location-map">
           <iframe
             title="Ubicación Hospedaje Muñoz en Ica"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.0!2d-75.7365!3d-14.0781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDA0JzQxLjIiUyA3NcKwNDQnMTEuNCJX!5e0!3m2!1ses!2spe!4v1620000000000!5m2!1ses!2spe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3741.9959734577424!2d-75.7465!3d-14.0797002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e345cc7ff645%3A0xab36d02c2838826f!2sHospedaje%20MU%C3%91OZ!5e0!3m2!1ses!2spe!4v1749674400000!5m2!1ses!2spe"
             width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
@@ -599,7 +659,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="logo.png" alt="Hospedaje Muñoz" class="footer-logo" />
+          <img src="Logo/logo.png" alt="Hospedaje Muñoz" class="footer-logo" />
           <p>Habitaciones cómodas, seguras y al mejor precio en Ica, Perú.</p>
         </div>
         <div class="footer-links">

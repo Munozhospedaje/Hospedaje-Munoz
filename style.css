@@ -447,6 +447,49 @@ ul { list-style: none; }
   justify-items: center;
 }
 
+/* === SECCIÓN UNIFICADA: PAGOS Y COMPROBANTES === */
+
+/* Contenedor de dos columnas 50/50 */
+.pagos-grid {
+  display: grid;
+  grid-template-columns: 1fr;          /* móvil: columna única */
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .pagos-grid { grid-template-columns: 1fr 1fr; } /* escritorio: dos columnas */
+}
+
+/* Cada columna: título + tarjetas agrupadas */
+.pagos-col {
+  background: var(--white);
+  border: 1.5px solid var(--gray-mid);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+}
+
+/* Título de columna — mismo estilo que section-eyebrow pero dentro de la tarjeta */
+.pagos-col-title {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+  background: var(--teal-light);
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+}
+
+/* Ítems dentro de cada columna: grid de 2 columnas si caben */
+.pagos-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+}
+
 /* === CARRUSEL DE FOTOS DE HABITACIONES === */
 
 /* Contenedor del carrusel — ocupa el ancho de la tarjeta */

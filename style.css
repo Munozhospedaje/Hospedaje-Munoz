@@ -440,6 +440,13 @@ ul { list-style: none; }
   color: var(--gray-text);
 }
 
+/* Grid centrado para secciones con pocos ítems (medios de pago, comprobantes) */
+.services-grid--centered {
+  max-width: 600px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
 /* === CARRUSEL DE FOTOS DE HABITACIONES === */
 
 /* Contenedor del carrusel — ocupa el ancho de la tarjeta */

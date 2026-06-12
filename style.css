@@ -440,6 +440,99 @@ ul { list-style: none; }
   color: var(--gray-text);
 }
 
+/* === CARRUSEL DE FOTOS DE HABITACIONES === */
+
+/* Contenedor del carrusel — ocupa el ancho de la tarjeta */
+.room-carousel {
+  position: relative;
+  width: 100%;
+  height: 210px;             /* altura fija para consistencia visual */
+  overflow: hidden;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--gray-mid);
+}
+
+/* Pila de imágenes: todas absolutas, solo la activa visible */
+.room-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.room-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+}
+
+.room-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Botones anterior / siguiente */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+  padding: 0;
+}
+.carousel-btn:hover  { background: rgba(46,156,156,.85); }
+.carousel-prev       { left: 10px; }
+.carousel-next       { right: 10px; }
+
+/* Puntos indicadores */
+.carousel-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.5);
+  transition: background var(--transition), transform var(--transition);
+  cursor: pointer;
+}
+.carousel-dot.active {
+  background: var(--white);
+  transform: scale(1.25);
+}
+
+/* Tarjetas con una sola foto: sin radio inferior en la imagen */
+.room-carousel--single { cursor: default; }
+.room-carousel--single .carousel-btn,
+.room-carousel--single .carousel-dots { display: none; }
+
+/* Ajuste: quitar el room-icon cuando hay carrusel */
+.room-card .room-carousel + .room-body { border-top: none; }
+
 .rooms-notice {
   margin-top: 32px;
   text-align: center;

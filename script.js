@@ -231,7 +231,8 @@
       '   ' + observaciones + '\n\n' +
       '━━━━━━━━━━━━━━━━━━━━━━\n' +
       '⚠️ *Nota:* Los pagos por impuestos tributarios o ingresos a atractivos turísticos no están incluidos en el precio del tour.\n\n' +
-      '📲 Enviado desde: gentlevins.com';
+      '🏨 Gracias por preferir Hospedaje Muñoz. Nuestro equipo revisará su solicitud y se comunicará con usted para finalizar la reserva.\n' +
+      '📧 munozhospedaje@gmail.com';
 
     /* CORRECCIÓN: encodeURIComponent + window.open(_blank) */
     var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(mensaje);
